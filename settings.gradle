@@ -1,0 +1,4 @@
+include ':base'
+include ':library-udweb'
+include ':app'
+rootProject.name = "testlib"

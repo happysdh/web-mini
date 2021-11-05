@@ -1,0 +1,7 @@
+<resources>
+    <string name="message">消息</string>
+    <string name="no_data">"暂无数据~"</string>
+    <string name="toast_get_image_error">获取图片出错</string>
+    <string name="input_error">"入参错误"</string>
+    <string name="picker_image_error">获取图片出错</string>
+</resources>

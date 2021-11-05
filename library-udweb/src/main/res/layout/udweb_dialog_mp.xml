@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_f5f7f9_20">
+
+    <TextView
+        android:id="@+id/tvClose"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#ff333333"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/llContent" />
+
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvShareWeChat"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:drawableTop="@mipmap/more_wechat"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="分享给微信好友"
+            android:textColor="#ff7f8188"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tvShareMoment"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:drawableTop="@mipmap/more_moments"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="分享到微信朋友圈"
+            android:textColor="#ff7f8188"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvSharePic"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:drawableTop="@mipmap/share_picture"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="生成二维码画报"
+            android:textColor="#ff7f8188"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvReload"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:drawableTop="@mipmap/more_refresh"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="重新进入该页面"
+            android:textColor="#ff7f8188"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWebServer"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="44dp"
+        android:text="开启Web服务"
+        app:layout_constraintBottom_toTopOf="@+id/tvBtn"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvWebOpen"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="44dp"
+        android:text="Web打开"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWebServer" />
+
+
+    <TextView
+        android:id="@+id/tvProxyWebOpen"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="44dp"
+        android:text="ProxyWeb打开"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWebOpen" />
+    <TextView
+        android:id="@+id/tvBrowser"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="打开浏览器"
+        app:layout_constraintBottom_toTopOf="@+id/tvBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBtn"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="开始"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvBtnFragment"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text="开始Fragment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

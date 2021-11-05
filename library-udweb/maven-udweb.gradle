@@ -1,0 +1,17 @@
+apply plugin: 'maven'
+ext {// ext is a gradle closure allowing the declaration of global properties
+    PUBLISH_GROUP_ID = 'com.uniondrug.library'
+    PUBLISH_ARTIFACT_ID = 'udweb'
+    PUBLISH_VERSION = '0.0.88'
+}
+uploadArchives {
+    repositories.mavenDeployer {
+        def localMavenRepo = 'file://' + new File(rootDir.parentFile, 'udweb').absolutePath
+        repository(url: localMavenRepo)
+        pom.project {
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
+        }
+    }
+}
