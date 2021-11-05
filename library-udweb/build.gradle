@@ -5,8 +5,10 @@ plugins {
     id 'kotlin-android-extensions'
 //    id 'com.yanzhenjie.andserver'
 }
+apply plugin: 'com.github.dcendents.android-maven'
 apply from: 'maven-udweb.gradle'
 
+group='com.github.happysdh'
 android {
     compileSdkVersion 28
     buildToolsVersion "30.0.2"
